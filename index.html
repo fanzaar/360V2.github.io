@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <h1>Hi, Welcome</h1>
+<html>
+<head>
+    <title>Hostel Finder</title>
+  	<link rel="stylesheet" href="style.css">
+    <style>
+        .hostel-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 300px;
+        }
 
-      <div class="image-container"></div>
-    </div>
+        .hostel-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
-      integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/panolens.min.js"></script>
+        .hostel-card h2 {
+            margin: 0;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
 
-    <script src="main.js"></script>
-  </body>
+        .hostel-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hostel Finder</h1>
+
+    <a href="mains.html" class="hostel-card">
+        <img src="hostel1.jpg" alt="Hostel 1">
+        <h2>Hostel 1</h2>
+        <p>Address: ABC Street, City</p>
+        <p>Price: $50 per night</p>
+        <p>Facilities: Wi-Fi, Laundry, Breakfast</p>
+    </a>
+
+    <a href="mains2.html" class="hostel-card">
+        <img src="hostel2.jpg" alt="Hostel 2">
+        <h2>Hostel 2</h2>
+        <p>Address: XYZ Street, City</p>
+        <p>Price: $60 per night</p>
+        <p>Facilities: Wi-Fi, Gym, Common Kitchen</p>
+    </a>
+
+    <a href="mains3.html" class="hostel-card">
+        <img src="hostel3.jpg" alt="Hostel 3">
+        <h2>Hostel 3</h2>
+        <p>Address: PQR Street, City</p>
+        <p>Price: $55 per night</p>
+        <p>Facilities: Wi-Fi, 24-hour Reception</p>
+    </a>
+</body>
 </html>

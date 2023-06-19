@@ -1,4 +1,4 @@
-const panoramaImage = new PANOLENS.ImagePanorama("");
+const panoramaImage = new PANOLENS.ImagePanorama("https://github.com/fanzaar/360V2.github.io/blob/main/images/image3.jpg");
 const imageContainer = document.querySelector(".image-container");
 
 const viewer = new PANOLENS.Viewer({

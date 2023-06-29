@@ -34,8 +34,8 @@ body {
 .arrow-button {
   position: absolute;
   top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #f44336;
@@ -43,17 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.arrow-button {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #f44336;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
 
 .arrow-button::before {
@@ -65,18 +55,6 @@ body {
   border-left: 10px solid white;
 }
 
-.top-left {
-  top: 20px;
-  left: 20px;
-}
-
-.top-right {
-  top: 20px;
-  right: 20px;
-}
-
-.bottom-center {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+.arrow-button:hover {
+  cursor: pointer;
 }

@@ -57,3 +57,18 @@ function createArrowButton() {
 
 // Example usage of createArrowButton()
 createArrowButton();
+function printCameraAngle() {
+  const camera = viewer.getCamera();
+  const currentPitch = camera.pitch;
+  const currentYaw = camera.yaw;
+
+  const angleElement = document.createElement("div");
+  angleElement.classList.add("camera-angle");
+  angleElement.textContent = `Pitch: ${currentPitch.toFixed(
+    2
+  )}, Yaw: ${currentYaw.toFixed(2)}`;
+  document.body.appendChild(angleElement);
+}
+
+// Example usage of printCameraAngle()
+printCameraAngle();

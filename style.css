@@ -31,3 +31,10 @@ body {
   text-shadow: 2px 16px 16px rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
+.camera-angle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 14px;
+}

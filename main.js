@@ -27,5 +27,5 @@ function createHotspot(position, tooltip, url) {
 createHotspot(
   { x: 100, y: -50, z: -70 }, // Position of the hotspot in 3D space
   "Click me!", // Tooltip text to display on hover
-  "mains2.html" // URL to redirect to when the hotspot is clicked
+  "youtube.com" // URL to redirect to when the hotspot is clicked
 );

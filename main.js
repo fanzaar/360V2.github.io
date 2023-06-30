@@ -12,10 +12,10 @@ const viewer = new PANOLENS.Viewer({
 viewer.add(panoramaImage);
 
 // Example values for pitch and yaw angle ranges
-const minPitch = -Math.PI / 6; // Example minimum pitch angle (-30 degrees)
-const maxPitch = Math.PI / 6; // Example maximum pitch angle (30 degrees)
-const minYaw = -Math.PI / 3; // Example minimum yaw angle (-60 degrees)
-const maxYaw = Math.PI / 3; // Example maximum yaw angle (60 degrees)
+const minPitch = -Math.PI / 10; // Example minimum pitch angle (-30 degrees)
+const maxPitch = Math.PI / 10; // Example maximum pitch angle (30 degrees)
+const minYaw = -Math.PI / 10; // Example minimum yaw angle (-60 degrees)
+const maxYaw = Math.PI / 10; // Example maximum yaw angle (60 degrees)
 
 // Function to check if the specific location is in view
 function isLocationInView() {
@@ -46,7 +46,7 @@ function createArrowButton() {
     arrowButton.style.position = "fixed";
     arrowButton.style.top = "50px";
     arrowButton.style.left = "50px";
-    arrowButton.style.backgroundImage = "url('arrow.png')";
+    arrowButton.style.backgroundImage = "url('images/arrow.png')";
     arrowButton.style.width = "40px";
     arrowButton.style.height = "40px";
     // Add event listeners or functionality to the arrow button if needed

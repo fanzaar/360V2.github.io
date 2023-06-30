@@ -59,8 +59,8 @@ function createArrowButton() {
 createArrowButton();
 function printCameraAngle() {
   const camera = viewer.getCamera();
-  const currentPitch = camera.pitch;
-  const currentYaw = camera.yaw;
+  const currentPitch = camera.rotation.x;
+  const currentYaw = camera.rotation.y;
 
   const angleElement = document.createElement("div");
   angleElement.classList.add("camera-angle");
@@ -70,5 +70,5 @@ function printCameraAngle() {
   document.body.appendChild(angleElement);
 }
 
-// Example usage of printCameraAngle()
 printCameraAngle();
+

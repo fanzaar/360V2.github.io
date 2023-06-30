@@ -31,15 +31,3 @@ body {
   text-shadow: 2px 16px 16px rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
-#arrow-container {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-}
-
-.arrow-button {
-  background-image: url('images/arrow.png');
-  width: 40px;
-  height: 40px;
-  /* Add additional styling as needed */
-}

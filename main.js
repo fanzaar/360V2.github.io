@@ -12,10 +12,10 @@ const viewer = new PANOLENS.Viewer({
 viewer.add(panoramaImage);
 
 // Example values for pitch and yaw angle ranges
-const minPitch = -Math.PI / 10; // Example minimum pitch angle (-30 degrees)
-const maxPitch = Math.PI / 10; // Example maximum pitch angle (30 degrees)
-const minYaw = -Math.PI / 10; // Example minimum yaw angle (-60 degrees)
-const maxYaw = Math.PI / 10; // Example maximum yaw angle (60 degrees)
+const minPitch = -Math.PI / 2; // Example minimum pitch angle (-30 degrees)
+const maxPitch = Math.PI / 2; // Example maximum pitch angle (30 degrees)
+const minYaw = -Math.PI / 2; // Example minimum yaw angle (-60 degrees)
+const maxYaw = Math.PI / 2; // Example maximum yaw angle (60 degrees)
 
 // Function to check if the specific location is in view
 function isLocationInView() {

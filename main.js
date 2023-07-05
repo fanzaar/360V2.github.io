@@ -9,7 +9,7 @@ const viewer = new PANOLENS.Viewer({
   controlBar: false,
 });
 
-viewer.enableControl(PANOLENS.CONTROLS.ORBIT, { positionIndicator: true });
+viewer.enableControl(1);
 
 viewer.add(panoramaImage);
 

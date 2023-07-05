@@ -9,12 +9,13 @@ const viewer = new PANOLENS.Viewer({
   controlBar: false,
 });
 
-viewer.enableControl(1);
+viewer.enableControl(PANOLENS.CONTROLS.ORBIT, { positionIndicator: true });
 
 viewer.add(panoramaImage);
 
 // Event listener for mouse click
-viewer.container.addEventListener("click", (event) => {
-  const position = viewer.getControlPosition(event);
+viewer.container.addEventListener("click", () => {
+  const position = viewer.getCamera().position;
   positionDisplay.textContent = `Position: x: ${position.x.toFixed(2)}, y: ${position.y.toFixed(2)}, z: ${position.z.toFixed(2)}`;
 });
+

@@ -1,21 +1,18 @@
+// Create the panorama image
 const panoramaImage = new PANOLENS.ImagePanorama("images/image1.jpeg");
+
+// Get the container element
 const imageContainer = document.querySelector(".image-container");
-const positionDisplay = document.querySelector("#position-display");
 
-const viewer = new PANOLENS.Viewer({
-  container: imageContainer,
-  autoRotate: true,
-  autoRotateSpeed: 0.3,
-  controlBar: false,
-});
+// Create the viewer with the container
+const viewer = new PANOLENS.Viewer({ container: imageContainer });
 
-viewer.enableControl(PANOLENS.CONTROLS.ORBIT, { positionIndicator: true });
-
+// Add the panorama image to the viewer
 viewer.add(panoramaImage);
 
 // Event listener for mouse click
-viewer.container.addEventListener("click", () => {
-  const position = viewer.getCamera().position;
-  positionDisplay.textContent = `Position: x: ${position.x.toFixed(2)}, y: ${position.y.toFixed(2)}, z: ${position.z.toFixed(2)}`;
+viewer.container.addEventListener("click", (event) => {
+  const position = viewer.getControlPosition(event);
+  console.log("Position:", position);
 });
 

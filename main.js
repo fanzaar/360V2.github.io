@@ -16,7 +16,7 @@ const infospotY = -965.44; // Y-coordinate of infospot
 const infospotZ = -1003.95; // Z-coordinate of infospot
 
 // Create an infospot at the specified position
-const infospot = new PANOLENS.Infospot(100, PANOLENS.DataImage.Info);
+const infospot = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
 infospot.position.set(infospotX, infospotY, infospotZ);
 viewer.add(infospot);
 

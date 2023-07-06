@@ -10,8 +10,8 @@ const viewer = new PANOLENS.Viewer({ container: imageContainer });
 // Add the panorama image to the viewer
 viewer.add(panoramaImage);
 
-// Event listener for mouse click
-viewer.container.addEventListener("click", (event) => {
-  const position = viewer.getControlPosition(event);
-  console.log("Position:", position);
-});
+// Create an infospot at the specified position
+const infospot = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
+infospot.position.set(100, 200, 300); // Replace with the desired coordinates
+viewer.add(infospot);
+

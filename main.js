@@ -11,7 +11,7 @@ const viewer = new PANOLENS.Viewer({ container: imageContainer });
 viewer.add(panoramaImage);
 
 // Create an infospot at the specified position
-const infospot = new PANOLENS.Infospot(500, PANOLENS.DataImage.Info);
+const infospot = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
 infospot.position.set(-4797.28, -965.44,-1003.95); // Replace with the desired coordinates
 viewer.add(infospot);
 

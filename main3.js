@@ -1,5 +1,5 @@
 // Create the panorama image
-const panoramaImage = new PANOLENS.ImagePanorama("images/image1.jpeg");
+const panoramaImage = new PANOLENS.ImagePanorama("images/image3.jpeg");
 
 // Get the container element
 const imageContainer = document.querySelector(".image-container");

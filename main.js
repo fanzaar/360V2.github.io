@@ -9,6 +9,11 @@ const viewer = new PANOLENS.Viewer({ container: imageContainer });
 
 // Add the panorama image to the viewer
 viewer.add(panoramaImage);
+viewer.addEventListener("panorama-load", function() {
+  const cameraPosition = viewer.getControl().getPosition();
+  console.log("Camera Position:", cameraPosition);
+});
+
 
 // Create an infospot at the specified position
 const infospot = new PANOLENS.Infospot(200, PANOLENS.DataImage.Info);

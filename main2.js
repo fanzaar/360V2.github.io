@@ -9,3 +9,7 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
+viewer.container.addEventListener("click", (event) => {
+  const position = viewer.getControlPosition(event);
+  console.log("Position:", position);
+});

@@ -10,3 +10,4 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
+panorama.link( "images/image1.jpg", new THREE.Vector3( -1742.29,-1574.03,4406.39 ) )

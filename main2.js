@@ -8,8 +8,3 @@ const viewer = new PANOLENS.Viewer({
   controlBar: false,
 });
 
-viewer.add(panoramaImage);
-viewer.addEventListener("panorama-load", function() {
-  const cameraPosition = viewer.getControl().getPosition();
-  console.log("Camera Position:", cameraPosition);
-});

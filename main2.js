@@ -11,3 +11,14 @@ const viewer = new PANOLENS.Viewer({
 
 viewer.add(panoramaImage);
 panorama.link( "images/image1.jpg", new THREE.Vector3( -1742.29,-1574.03,4406.39 ) )
+// Create an infospot at the specified position
+const infospot = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
+infospot.position.set(-1742.29,-1574.03,4406.39);
+
+// Set the URL to redirect when the infospot is clicked
+infospot.addEventListener("click", () => {
+  window.location.href = "https://youtube.com"; // Replace with the desired URL
+});
+
+// Add the infospot to the viewer
+viewer.add(infospot);

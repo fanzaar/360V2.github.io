@@ -8,3 +8,4 @@ const viewer = new PANOLENS.Viewer({
   controlBar: false,
 });
 
+viewer.add(panoramaImage);

@@ -6,6 +6,7 @@ const viewer = new PANOLENS.Viewer({
   autoRotate: true,
   autoRotateSpeed: 0.3,
   controlBar: false,
+  output:'overlay',
 });
 
 viewer.add(panoramaImage);

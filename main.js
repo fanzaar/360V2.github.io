@@ -10,7 +10,7 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
-var infospot:
+var infospot;
 infospot = new PANOLENS.Infospot();
 infospot.position.set( -1305, 3777, -3000.49 );
 infospot.addHoverText( 'This way to kitchen' );

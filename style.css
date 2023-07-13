@@ -32,20 +32,6 @@ body {
   pointer-events: none;
 }
 
-.button {
-  position: absolute;
-  top: -1574.03px; /* Adjust the top position based on the desired y-coordinate */
-  left: -1742.29px; /* Adjust the left position based on the desired x-coordinate */
-  transform: translateZ(4406.39px); /* Adjust the translateZ value based on the desired z-coordinate */
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 #position-display {
   position: fixed;

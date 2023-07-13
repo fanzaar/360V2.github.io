@@ -10,4 +10,11 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
+var infospot:
+infospot = new PANOLENS.Infospot();
+infospot.position.set( -1305, 3777, -3000.49 );
+infospot.addHoverText( 'This way to kitchen' );
+infospot.addEventListener("click", () => {
+  window.location.href = "https://youtube.com"; // Replace with the URL of the desired page
+});
 

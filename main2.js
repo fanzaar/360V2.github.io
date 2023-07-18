@@ -1,3 +1,4 @@
+
 const panoramaImage = new PANOLENS.ImagePanorama("images/image2.jpg");
 const imageContainer = document.querySelector(".image-container");
 
@@ -11,7 +12,12 @@ const viewer = new PANOLENS.Viewer({
 
 viewer.add(panoramaImage);
 var infospot;
-infospot = new PANOLENS.Infospot();
+infospot = new PANOLENS.Infospot(400,"images/ar.jpeg");
 infospot.position.set( -1748.97, -3031.60, 3560.66 );
 infospot.addHoverText( 'This way to kitchen' );
-viewer.add(infospot);
+panoramaImage.add(infospot);
+infospot.addEventListener("click", () => {
+  // Code to be executed when infospot is clicked
+  // Replace this with your own code
+  window.location.href = "mains.html"; // Redirect to another page
+});

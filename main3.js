@@ -8,11 +8,11 @@ const viewer = new PANOLENS.Viewer({
   controlBar: false,
   output:'console',
 });
-
-viewer.add(panoramaImage);
-//-3055.79, -2654.36, 2925.52
 var infospot;
-infospot = new PANOLENS.Infospot();
+infospot = new PANOLENS.Infospot(300,"images/arrow.png");
 infospot.position.set( -3055.79, -2654.36, 2925.52 );
 infospot.addHoverText( 'This way to kitchen' );
-viewer.add(infospot);
+panaromaImage.add(infospot);
+viewer.add(panoramaImage);
+//-3055.79, -2654.36, 2925.52
+

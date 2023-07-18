@@ -10,11 +10,17 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
-var infospot;
+var infospot,infospot2;
 infospot = new PANOLENS.Infospot(700,"images/arrow1.png");
 infospot.position.set( -1952.57, -3029.47, -3458.79 );
-infospot.addHoverText( 'This way to kitchen' );
+infospot.addHoverText( 'This way to bathroom' );
 infospot.addEventListener("click", () => {
   window.location.href = "mains3.html"; // Replace with the URL of the desired page
 });
-
+infospot = new PANOLENS.Infospot(700,"images/arrow1.png");
+infospot.position.set( 4356.00, -1700.25, -1743.81 );
+infospot.addHoverText( 'This way to second room' );
+infospot.addEventListener("click", () => {
+  window.location.href = "mains3.html"; // Replace with the URL of the desired page
+});
+panoramaImage.add(infospot,infospot2);

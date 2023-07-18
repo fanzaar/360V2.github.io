@@ -9,8 +9,8 @@ const viewer = new PANOLENS.Viewer({
   output:'console',
 });
 var infospot;
-infospot = new PANOLENS.Infospot(300,"images/arr.jpg");
-infospot.position.set( -3661.86, -2855.32, 1833.94 );
+infospot = new PANOLENS.Infospot(300,"images/ar.jpg");
+infospot.position.set( -3681.86, -2855.32, 1840.94 );
 infospot.addHoverText( 'This way to kitchen' );
 infospot.addEventListener("click", () => {
   // Code to be executed when infospot is clicked

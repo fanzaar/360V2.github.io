@@ -9,7 +9,7 @@ const viewer = new PANOLENS.Viewer({
   output:'console',
 });
 var infospot;
-infospot = new PANOLENS.Infospot(500,"images/ar.jpg");
+infospot = new PANOLENS.Infospot(500,"images/arrow1.png");
 infospot.position.set( -3681.86, -2855.32, 1840.94 );
 infospot.addHoverText( 'This way to kitchen' );
 infospot.addEventListener("click", () => {

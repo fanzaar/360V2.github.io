@@ -1,44 +1,113 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.main-container {
+/* Header */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
   display: flex;
-  height: 100vh;
   align-items: center;
-  background: #111;
+  justify-content: space-between;
 }
 
-.main-container .image-container {
-  /* flex: 1; */
-  height: 100%;
-
-  position: fixed;
-  width: 100%;
+nav h1 {
+  font-size: 24px;
+  color: #ff5a5f;
+  margin: 0;
+  padding: 0 20px;
 }
 
-.main-container h1 {
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
   flex: 1;
-  text-align: center;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 60px;
-  font-weight: 800;
-  letter-spacing: 10px;
-
-  z-index: 100;
-  text-shadow: 2px 16px 16px rgba(0, 0, 0, 0.3);
-  pointer-events: none;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #d1a2a27d;
+  border-radius: 4px;
 }
 
-
-#position-display {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+.search-bar button {
+  background-color: #ff5a5f;
   color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Hostel Cards */
+.hostel-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.hostel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.hostel-card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.hostel-card p {
+  margin: 0;
   font-size: 14px;
+  color: #888;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }

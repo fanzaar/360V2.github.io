@@ -1,0 +1,201 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    
+}
+
+nav h1 {
+    font-size: 50px;
+    color: #ff5a5f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ... Previous CSS Rules ... */
+
+/* Neon-themed color scheme */
+:root {
+    --neon-primary: #2eff8b;
+    --neon-secondary: #12c1e3;
+    --neon-background: #0a192f;
+}
+
+/* Hostel Cards */
+.hostel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hostel-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden; /* Ensure the hover effect doesn't cause content overflow */
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hostel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.hostel-card .hostel-details {
+    padding: 20px;
+}
+
+.hostel-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.hostel-card p {
+    margin: 5px 0;
+}
+
+/* Hover Effect for Hostel Cards */
+.hostel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Neon-themed Hover Effect */
+.hostel-card:hover img {
+    filter: brightness(1.2) saturate(1.2);
+}
+
+.hostel-card:hover h2 {
+    color: red;
+}
+
+.hostel-card:hover p {
+    color: blue;
+}
+
+.hostel-card:hover .popup {
+    display: block;
+}
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--neon-background);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ... Additional CSS Rules ... */
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .hostel-card {
+        width: calc(50% - 20px);
+    }
+}

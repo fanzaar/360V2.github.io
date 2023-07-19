@@ -133,3 +133,8 @@ footer {
 footer p {
   margin: 0;
 }
+@media (max-width: 768px) {
+  .hostel-card {
+    width: 100%;
+  }
+}

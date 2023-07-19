@@ -17,10 +17,10 @@ infospot.addHoverText( 'This way to bathroom' );
 infospot.addEventListener("click", () => {
   window.location.href = "mains3.html"; // Replace with the URL of the desired page
 });
-infospot = new PANOLENS.Infospot(700,"images/arrow1.png");
-infospot.position.set( 4356.00, -1700.25, -1743.81 );
-infospot.addHoverText( 'This way to second room' );
-infospot.addEventListener("click", () => {
-  window.location.href = "mains3.html"; // Replace with the URL of the desired page
+infospot2 = new PANOLENS.Infospot(700,"images/arrow1.png");
+infospot2.position.set( 4356.00, -1700.25, -1743.81 );
+infospot2.addHoverText( 'This way to second room' );
+infospot2.addEventListener("click", () => {
+  window.location.href = "mains2.html"; // Replace with the URL of the desired page
 });
 panoramaImage.add(infospot,infospot2);

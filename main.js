@@ -23,4 +23,5 @@ infospot2.addHoverText( 'This way to second room' );
 infospot2.addEventListener("click", () => {
   window.location.href = "mains2.html"; // Replace with the URL of the desired page
 });
-panoramaImage.add(infospot,infospot2);
+panoramaImage.add(infospot);
+panoramaImage.add(infospot2);

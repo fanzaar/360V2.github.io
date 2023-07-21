@@ -10,7 +10,8 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add(panoramaImage);
-var infospot,infospot2;
+var infospot;
+var infospot2;
 infospot = new PANOLENS.Infospot(700,"images/arrow1.png");
 infospot.position.set( -1952.57, -3029.47, -3458.79 );
 infospot.addHoverText( 'This way to bathroom' );
